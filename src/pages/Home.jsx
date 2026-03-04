@@ -28,23 +28,18 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-highlight">
-        <div className="highlight-container">
-          <div className="highlight-card">
-            <span className="highlight-icon">🙏</span>
-            <h3>Reuniones</h3>
-            <p>Domingos 10:00 hs y 18:00 hs</p>
+      <section className="home-reuniones">
+        <div className="reuniones-container">
+          <span className="reuniones-label">Te esperamos</span>
+          <h2 className="reuniones-title">Reuniones</h2>
+          <div className="reuniones-time">
+            <span className="reuniones-day">Sábados</span>
+            <div className="reuniones-divider"></div>
+            <span className="reuniones-hour">19:30h</span>
           </div>
-          <div className="highlight-card">
-            <span className="highlight-icon">💜</span>
-            <h3>Comunidad</h3>
-            <p>Un lugar para crecer juntos en fe</p>
-          </div>
-          <div className="highlight-card">
-            <span className="highlight-icon">📖</span>
-            <h3>La Palabra</h3>
-            <p>La Biblia es la base de nuestra fe</p>
-          </div>
+          <Link to="/como-llegar" className="btn btn-reuniones">
+            ¿Cómo llegar?
+          </Link>
         </div>
       </section>
     </div>
