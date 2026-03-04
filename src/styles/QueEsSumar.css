@@ -1,0 +1,87 @@
+.sumar-hero {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.sumar-hero-logo {
+  width: 150px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 1.5rem;
+}
+
+.sumar-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.sumar-hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+  letter-spacing: 2px;
+}
+
+.valores-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.valores-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--purple-dark);
+  margin-bottom: 3rem;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.valor-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.08);
+  border-left: 4px solid var(--purple-main);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.15);
+}
+
+.valor-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.valor-nombre {
+  font-size: 1.15rem;
+  color: var(--purple-dark);
+  margin-bottom: 0.5rem;
+}
+
+.valor-desc {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .sumar-hero h1 {
+    font-size: 2rem;
+  }
+
+  .sumar-hero-logo {
+    width: 120px;
+  }
+}

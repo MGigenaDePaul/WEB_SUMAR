@@ -1,0 +1,168 @@
+/* ========== HERO ========== */
+.home-hero {
+  background: linear-gradient(
+    180deg,
+    var(--purple-lightest) 0%,
+    var(--white) 100%
+  );
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-logo {
+  width: 250px;
+  height: auto;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.home-title {
+  color: var(--purple-darkest);
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.home-subtitle {
+  color: var(--gray-text);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.home-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  text-decoration: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--purple-main);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+.btn-primary:hover {
+  background: var(--purple-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(124, 58, 237, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--purple-dark);
+  border: 2px solid var(--purple-medium);
+}
+
+.btn-secondary:hover {
+  background: var(--purple-lightest);
+  border-color: var(--purple-main);
+  transform: translateY(-2px);
+}
+
+/* ========== HIGHLIGHTS ========== */
+.home-highlight {
+  padding: 4rem 2rem;
+  background: var(--white);
+}
+
+.highlight-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.highlight-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  background: var(--purple-lightest);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.12);
+}
+
+.highlight-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+  color: var(--purple-dark);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+  color: var(--gray-text);
+  font-size: 0.95rem;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .home-logo {
+    width: 180px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+}

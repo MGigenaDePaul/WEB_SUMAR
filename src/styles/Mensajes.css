@@ -1,0 +1,85 @@
+.mensajes-hero {
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple-main));
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.mensajes-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.mensajes-hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.mensajes-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.mensajes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mensaje-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mensaje-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.15);
+}
+
+.mensaje-icon {
+  background: linear-gradient(135deg, var(--purple-main), var(--purple-medium));
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.mensaje-fecha {
+  font-size: 0.8rem;
+  color: var(--purple-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mensaje-titulo {
+  font-size: 1.3rem;
+  color: var(--purple-dark);
+  margin: 0.3rem 0;
+}
+
+.mensaje-pastor {
+  font-size: 0.9rem;
+  color: var(--purple-medium);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.mensaje-resumen {
+  font-size: 0.95rem;
+  color: var(--gray-text);
+}
